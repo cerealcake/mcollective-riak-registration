@@ -35,7 +35,7 @@ module MCollective
         object.data = data
         object.store
 
-        Log.instance.warn("node #{data[:identity]} stored in #{@riak_bucket} on riak node #{@riak_node}");
+        Log.instance.debug("node #{data[:identity]} stored in #{@riak_bucket} on riak node #{@riak_node}");
 
         nil
       end
